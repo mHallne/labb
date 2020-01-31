@@ -1,0 +1,7 @@
+{
+	"name": "Test MMS",
+	"properties": {
+		"description": "Kopierar infil till långtidslagring.\nLäser in den till dw\nDeletar den\nTransformerar\nPersisterar i databas",
+		"annotations": []
+	}
+}
