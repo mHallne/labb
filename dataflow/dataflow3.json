@@ -1,0 +1,24 @@
+{
+	"name": "dataflow3",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "PGLogg_json",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "DerivedColumn1"
+				}
+			],
+			"script": "source(output(\n\t\tproduct as string,\n\t\tversion as string,\n\t\tchannelcode as string,\n\t\tgenerated as string,\n\t\tcontact as string,\n\t\tlog as (logentry as (kanalnummer as string, start as string, end as string, kanalreferens as string, programtitel as string, serie as string, episod as string, filmcode as string, rerun as boolean, countryoforigin as string)[])\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> source1\nsource1 derive() ~> DerivedColumn1"
+		}
+	}
+}

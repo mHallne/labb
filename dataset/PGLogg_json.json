@@ -1,0 +1,82 @@
+{
+	"name": "PGLogg_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "try1.json",
+				"folderPath": "input",
+				"container": "adftutorial"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"product": {
+					"type": "string"
+				},
+				"version": {
+					"type": "integer"
+				},
+				"channelcode": {
+					"type": "string"
+				},
+				"generated": {
+					"type": "string"
+				},
+				"contact": {
+					"type": "string"
+				},
+				"log": {
+					"type": "object",
+					"properties": {
+						"logentry": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"kanalnummer": {
+										"type": "integer"
+									},
+									"start": {
+										"type": "string"
+									},
+									"end": {
+										"type": "string"
+									},
+									"kanalreferens": {
+										"type": "string"
+									},
+									"programtitel": {
+										"type": "string"
+									},
+									"serie": {
+										"type": "string"
+									},
+									"episod": {
+										"type": "string"
+									},
+									"filmcode": {
+										"type": "string"
+									},
+									"rerun": {
+										"type": "boolean"
+									},
+									"countryoforigin": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
