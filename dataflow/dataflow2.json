@@ -26,7 +26,7 @@
 					"name": "DerivedColumn1"
 				}
 			],
-			"script": "source(output(\n\t\tColumn_1 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> source1\nsource1 derive(Kanalnummer = substring(Column_1,1,2),\n\t\tStartdatum = substring(Column_1,3,6),\n\t\tStartklockslag = substring(Column_1,9,6),\n\t\tSlutdatum = substring(Column_1,16,6),\n\t\tSlutklockslag = substring(Column_1,23,6),\n\t\t{Används inte} = substring(Column_1,30,32),\n\t\tKanalreferens = substring(Column_1,63,20),\n\t\tProgramtitel = substring(Column_1,84,30)) ~> DerivedColumn1\nDerivedColumn1 sink(input(\n\t\tColumn_1 as string,\n\t\tColumn_2 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> sink1"
+			"script": "source(output(\n\t\tColumn_1 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> source1\nsource1 derive(Kanalnummer = substring(Column_1,1,2),\n\t\tStartdatum = substring(Column_1,3,6),\n\t\tStartklockslag = substring(Column_1,9,6),\n\t\tSlutdatum = substring(Column_1,16,6),\n\t\tSlutklockslag = substring(Column_1,23,6),\n\t\t{Används inte} = substring(Column_1,30,32),\n\t\tKanalreferens = substring(Column_1,60,20),\n\t\tProgramtitel = substring(Column_1,80,30)) ~> DerivedColumn1\nDerivedColumn1 sink(input(\n\t\tColumn_1 as string,\n\t\tColumn_2 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> sink1"
 		}
 	}
 }
