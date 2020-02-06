@@ -92,13 +92,9 @@
 			}
 		],
 		"parameters": {
-			"Storage": {
+			"relativePath": {
 				"type": "string",
-				"defaultValue": "/pgloggar/"
-			},
-			"filePath": {
-				"type": "String",
-				"defaultValue": "Path"
+				"defaultValue": "pglogg"
 			}
 		},
 		"annotations": []
