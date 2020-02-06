@@ -94,7 +94,7 @@
 		"parameters": {
 			"Storage": {
 				"type": "string",
-				"defaultValue": "."
+				"defaultValue": "/pgloggar/"
 			}
 		},
 		"annotations": []
