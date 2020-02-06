@@ -86,9 +86,9 @@
 			}
 		],
 		"parameters": {
-			"Test": {
+			"Storage": {
 				"type": "string",
-				"defaultValue": "Test"
+				"defaultValue": "."
 			}
 		},
 		"annotations": []
