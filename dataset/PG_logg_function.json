@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"folderPath": "pg_logg_copy",
 				"container": "adftutorial"
 			}
 		}
