@@ -10,10 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": {
-					"value": "@dataset().relativeurl",
-					"type": "Expression"
-				},
 				"container": "adftutorial"
 			}
 		}

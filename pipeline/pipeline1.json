@@ -45,7 +45,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "adftutorial//"
+					},
+					{
+						"name": "Destination",
+						"value": "adftutorial//"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "BinarySource",
