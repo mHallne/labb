@@ -5,12 +5,6 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"relativeurl": {
-				"type": "string",
-				"defaultValue": "/pglogg"
-			}
-		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
