@@ -16,7 +16,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "pglogg",
+				"folderPath": {
+					"value": "@dataset().relativeurl",
+					"type": "Expression"
+				},
 				"container": "adftutorial"
 			}
 		}
