@@ -48,11 +48,11 @@
 				"userProperties": [
 					{
 						"name": "Source",
-						"value": "adftutorial//"
+						"value": "adftutorial/@{pipeline().parameters.relativePath}/"
 					},
 					{
 						"name": "Destination",
-						"value": "adftutorial//"
+						"value": "adftutorial/@{pipeline().parameters.relativePath}//output/"
 					}
 				],
 				"typeProperties": {
