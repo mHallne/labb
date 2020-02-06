@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "pglogg-exempel",
-				"folderPath": "input",
+				"folderPath": "pglogg",
 				"container": "adftutorial"
 			}
 		}
