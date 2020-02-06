@@ -45,16 +45,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"name": "Source",
-						"value": "adftutorial/@{pipeline().parameters.Storage}/"
-					},
-					{
-						"name": "Destination",
-						"value": "adftutorial/pg_logg_copy/"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "BinarySource",
@@ -74,13 +65,7 @@
 				"inputs": [
 					{
 						"referenceName": "PGLogg",
-						"type": "DatasetReference",
-						"parameters": {
-							"relativeurl": {
-								"value": "@pipeline().parameters.Storage",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
