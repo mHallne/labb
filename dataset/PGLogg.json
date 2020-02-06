@@ -5,6 +5,12 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"relativePath": {
+				"type": "string",
+				"defaultValue": "path"
+			}
+		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
