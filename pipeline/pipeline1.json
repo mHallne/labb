@@ -95,6 +95,10 @@
 			"Storage": {
 				"type": "string",
 				"defaultValue": "/pgloggar/"
+			},
+			"filePath": {
+				"type": "String",
+				"defaultValue": "Path"
 			}
 		},
 		"annotations": []
