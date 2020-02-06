@@ -36,7 +36,12 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "name",
+						"value": "Micke"
+					}
+				],
 				"typeProperties": {
 					"functionName": "HttpTrigger1",
 					"method": "POST"
