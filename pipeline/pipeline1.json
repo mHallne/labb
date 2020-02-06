@@ -48,7 +48,7 @@
 				"userProperties": [
 					{
 						"name": "Source",
-						"value": "adftutorial/pglogg/"
+						"value": "adftutorial/@{pipeline().parameters.Storage}/"
 					},
 					{
 						"name": "Destination",
