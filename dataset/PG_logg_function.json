@@ -5,11 +5,21 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"outPath": {
+				"type": "string",
+				"defaultValue": "path"
+			}
+		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@dataset().outPath",
+					"type": "Expression"
+				},
 				"container": "adftutorial"
 			}
 		}
