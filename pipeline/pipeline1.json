@@ -74,7 +74,13 @@
 				"inputs": [
 					{
 						"referenceName": "PGLogg",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"relativePath": {
+								"value": "@pipeline().parameters.relativePath",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
