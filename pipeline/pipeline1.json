@@ -40,7 +40,7 @@
 				"typeProperties": {
 					"functionName": "HttpTrigger1",
 					"method": "POST",
-					"body": "name=Micke"
+					"body": "req=Kalle&name=Micke"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureFunction1",
