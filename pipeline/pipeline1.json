@@ -85,6 +85,12 @@
 				]
 			}
 		],
+		"parameters": {
+			"Test": {
+				"type": "string",
+				"defaultValue": "Test"
+			}
+		},
 		"annotations": []
 	}
 }
