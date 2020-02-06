@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"outPath": {
+			"relativePath": {
 				"type": "string",
 				"defaultValue": "path"
 			}
@@ -17,7 +17,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"folderPath": {
-					"value": "@{dataset().outPath}//output",
+					"value": "@{dataset().relativePath}//output",
 					"type": "Expression"
 				},
 				"container": "adftutorial"
