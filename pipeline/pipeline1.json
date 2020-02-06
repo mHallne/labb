@@ -25,7 +25,7 @@
 					"functionName": "HttpTrigger2",
 					"method": "POST",
 					"body": {
-						"value": "{\n\"req\": \"@pipeline().parameters.Storage\"\n}",
+						"value": "{\n\"req\": @pipeline().parameters.Storage\n}",
 						"type": "Expression"
 					}
 				},
