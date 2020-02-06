@@ -74,7 +74,13 @@
 				"inputs": [
 					{
 						"referenceName": "PGLogg",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"relativeurl": {
+								"value": "@pipeline().parameters.Storage",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
