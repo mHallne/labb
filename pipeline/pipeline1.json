@@ -25,7 +25,8 @@
 					"functionName": "HttpTrigger1",
 					"method": "POST",
 					"body": {
-						"name": "Azure"
+						"value": "@activity('Copy data1').output",
+						"type": "Expression"
 					}
 				},
 				"linkedServiceName": {
