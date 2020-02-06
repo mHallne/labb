@@ -36,15 +36,11 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"name": "name",
-						"value": "Micke"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"functionName": "HttpTrigger1",
-					"method": "POST"
+					"method": "POST",
+					"body": "name=Micke"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureFunction1",
