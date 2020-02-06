@@ -45,7 +45,7 @@
 					},
 					{
 						"name": "Destination",
-						"value": "adftutorial//"
+						"value": "adftutorial/pg_logg_copy/"
 					}
 				],
 				"typeProperties": {
