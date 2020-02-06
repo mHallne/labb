@@ -25,7 +25,7 @@
 					"functionName": "HttpTrigger1",
 					"method": "POST",
 					"body": {
-						"value": "@activity('Copy data1').output",
+						"value": "{\n\"val\": \"@activity('Copy data1').output\"\n}",
 						"type": "Expression"
 					}
 				},
