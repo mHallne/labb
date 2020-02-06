@@ -5,7 +5,14 @@
 			{
 				"name": "Azure Function1",
 				"type": "AzureFunctionActivity",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -15,7 +22,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"functionName": "BlobTrigger1",
+					"functionName": "HttpTrigger2",
 					"method": "POST",
 					"body": {
 						"value": "{\n\"val\": \"@activity('Copy data1').output\"\n}",
