@@ -17,7 +17,9 @@
 				"typeProperties": {
 					"functionName": "HttpTrigger1",
 					"method": "POST",
-					"body": "req=Kalle&name=Micke"
+					"body": {
+						"name": "Azure"
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureFunction1",
