@@ -17,7 +17,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"folderPath": {
-					"value": "@dataset().outPath",
+					"value": "@{dataset().outPath}//output",
 					"type": "Expression"
 				},
 				"container": "adftutorial"
