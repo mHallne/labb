@@ -20,7 +20,6 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
 				"typeProperties": {
 					"functionName": "HttpTrigger2",
 					"method": "POST",
